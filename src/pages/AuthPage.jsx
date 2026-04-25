@@ -45,23 +45,23 @@ export default function AuthPage() {
   }
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-bg-main py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-bg-main py-8 px-4 sm:py-12 sm:px-6 lg:px-8">
       <div className="w-full max-w-md text-center">
-        <div className="flex justify-center mb-4">
-          <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center">
-            <CheckCircle2 className="h-8 w-8 text-accent" />
+        <div className="flex justify-center mb-3 sm:mb-4">
+          <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-xl bg-accent/10 flex items-center justify-center">
+            <CheckCircle2 className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
           </div>
         </div>
-        <h2 className="text-2xl font-bold tracking-tight text-text-primary">
+        <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-text-primary">
           {isLogin ? 'Entre na sua conta' : 'Crie sua conta'}
         </h2>
-        <p className="mt-2 text-sm text-text-secondary">
+        <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-text-secondary">
           E organize sua vida com o TaskFlow.
         </p>
       </div>
 
-      <div className="mt-8 w-full max-w-md animate-fade-in">
-        <div className="bg-bg-surface py-8 px-4 shadow sm:rounded-xl sm:px-10 border border-border">
+      <div className="mt-6 sm:mt-8 w-full max-w-md animate-fade-in">
+        <div className="bg-bg-surface py-6 px-4 shadow rounded-2xl sm:rounded-xl sm:py-8 sm:px-10 border border-border">
           <form className="space-y-6" onSubmit={handleSubmit}>
             {error && (
               <div className="bg-danger/10 border border-danger/20 rounded-md p-3 flex items-start gap-3">
